@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update User Data</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Management</h1>
+
+    <!-- User Table -->
+    <table id="users-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="users-body">
+        <!-- User rows will be dynamically added here -->
+      </tbody>
+    </table>
+
+    <!-- Edit User Form -->
+    <form id="edit-user-form" style="display: none;">
+      <h2>Edit User</h2>
+      <input type="hidden" id="user-id">
+      <label for="edit-name">Name:</label>
+      <input type="text" id="edit-name" required>
+      
+      <label for="edit-email">Email:</label>
+      <input type="email" id="edit-email" required>
+      
+      <button type="submit">Update User</button>
+      <button type="button" id="cancel-edit">Cancel</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+  <script src="script2.js"></script>
+</body>
+</html>
